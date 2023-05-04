@@ -1,9 +1,9 @@
 import React from "react";
 
-function Painel(){
+function Painel(props){
     return(
         <div>
-            
+            <span>{props.contagem}</span>
         </div>
     );
 }
