@@ -10,7 +10,7 @@ function App() {
     <div className="App">
       <ContagemContext.Provider value={{contagem, setContagem}}>
         <BtnContagem />
-        <Painel />
+        <Painel contagem={contagem} />
       </ContagemContext.Provider>
     </div>
   );

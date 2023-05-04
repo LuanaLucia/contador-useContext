@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useContext } from "react";
+import ContagemContext from '../../Context/ContagemContext'
 
 function BtnContagem(){
     // const [contagem, setContagem] = useState(0)
+    const { contagem, setContagem } = useContext(ContagemContext)
     function handleClick(){
         setContagem(contagem + 1);
     }
